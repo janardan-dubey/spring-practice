@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="food" class="com.beans.FoodCart">
+		<property name="dishes">
+			<list>
+				<value>Mutter Panner</value>
+				<value>Mutter Panner</value>
+				<value>Chapati</value>
+				<value>Papad</value>
+				<value>Chicken Curry</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>
