@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	<bean id="dep" class="com.beans.Department">
+		<property name="departmentId" value="NIT005"></property>
+		<property name="departmentName" value="NIT"></property>
+		<property name="departmentLocation" value="Hyd"></property>
+	</bean>
+
+	<bean id="emp" class="com.beans.Employee" autowire="byType">
+		<property name="employeeId" value="JNIT101"></property>
+		<property name="employeeName" value="Janardan"></property>
+		<property name="employeeSalary" value="20000"></property>
+	
+	</bean>
+
+<!-- 
+	<bean id="dep" class="com.beans.Department">
+		<constructor-arg value="NIT005"></constructor-arg>
+		<constructor-arg value="NIT"></constructor-arg>
+		<constructor-arg value="Hyd"></constructor-arg>
+	</bean>
+	
+	<bean id="emp" class="com.beans.Employee">
+		<constructor-arg value="JNIT101"></constructor-arg>
+		<constructor-arg value="Janardan"></constructor-arg>
+		<constructor-arg value="200000"></constructor-arg>
+		<constructor-arg ref="dep"></constructor-arg>
+	</bean>
+ -->
+
+</beans>
